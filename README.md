@@ -14,7 +14,7 @@ Notes and Credits
   Made for World Ocean Day 2025, on June 8.
   https://worldoceanday.org/
   
-  Getting to the bottom requires 2:30 to 5 hours or 1:45 to 3:15 hours. Good luck!
+  Getting to the bottom requires 2:30 to 5 hours or 1:45 to 3:15 hours, depending on the submersible you get. Good luck!
   
   Costumes
     DSV Limiting Factor from https://fivedeeps.com/wp-content/uploads/2018/11/LF_Front_2x-1.jpg
