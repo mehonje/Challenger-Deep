@@ -1,5 +1,5 @@
 # Challenger-Deep
-This is my first proper game, using my game engine.
+This is my first proper game, using my own game engine.
 
 It uses my custom Python game engine, https://github.com/mehonje/Mehonje-s-Game-Engine
 
