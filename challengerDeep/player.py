@@ -1,4 +1,4 @@
-from sprite import Sprite, convertCoords
+from sprite import Sprite
 import pygame
 from random import randint
 import math
