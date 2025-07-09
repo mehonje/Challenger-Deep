@@ -1,4 +1,4 @@
-from sprite import Sprite, convertCoords
+from sprite import Sprite
 import pygame
 from math import floor
 
@@ -8,16 +8,16 @@ class TextEngine(Sprite):
         self.fontSetups = {}
 
     def text(self, text, position, align, colour, font, size):
-        fontSetup = (font, size)
+        fontSetup = (font, size * (self.gameEngine.width / 480))
         if fontSetup not in self.fontSetups:
-            self.fontSetups[fontSetup] = pygame.font.SysFont(font, size)
+            self.fontSetups[fontSetup] = pygame.font.SysFont(font, int(size * (self.gameEngine.width / 480)))
         font = self.fontSetups[fontSetup]
         x, y = position[0], position[1]
         if align == "r":
              x -= font.size(text)[0]
         elif align == "c":
             x -= font.size(text)[0] / 2
-        self.screen.blit(font.render(text, True, colour), convertCoords(x, y, ""))
+        self.screen.blit(font.render(text, True, colour), self.convertCoords(x, y, ""))
 
     def paint(self):
         self.text(f"{floor(self.gameEngine.playerDepth)}m", (0, 175), "c", (255, 255, 255), "Sans Serif", 28)
