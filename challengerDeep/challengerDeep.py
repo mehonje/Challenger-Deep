@@ -19,7 +19,14 @@ class gameEngine:
         print("You can find me at https://scratch.mit.edu/users/mehonje/ and https://github.com/mehonje")
         print("This game was made using Mehonje's Game Engine - https://github.com/mehonje/Mehonje-s-Game-Engine")
         self.clock = pygame.time.Clock()
-        self.screen = pygame.display.set_mode((480, 360))
+        tmp = pygame.display.Info()
+        if tmp.current_h < tmp.current_w:
+            self.width = (tmp.current_h - 60) * (4/3)
+            self.height = tmp.current_h - 60
+        else:
+            self.width = tmp.current_w - 60
+            self.height = (tmp.current_w - 60) * 0.75
+        self.screen = pygame.display.set_mode((int(self.width), int(self.height)))
         pygame.display.set_caption(gameName)
         pygame.mixer.init()
 
@@ -44,7 +51,7 @@ class gameEngine:
         self.particles = Particles(self, "")
         self.textEngine = TextEngine(self, "")
         self.soundEffects = SoundEffects(self)
-        self.music = Music(self)
+        self.music = Music(self, "")
 
     def runGame(self):
         self.running = True
