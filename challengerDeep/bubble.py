@@ -1,4 +1,4 @@
-from sprite import Sprite, convertCoords
+from sprite import Sprite
 import pygame
 
 class Bubble(Sprite):
@@ -19,4 +19,4 @@ class Bubble(Sprite):
 
     def paint(self):
         self.x, self.y = self.bubbleX, self.bubbleY - self.gameEngine.camY
-        pygame.draw.circle(self.screen, (102, 175, 255), convertCoords(self.x, self.y, ""), self.size / 2, 0)
+        pygame.draw.circle(self.screen, (102, 175, 255), self.convertCoords(self.x, self.y, ""), self.size / 2, 0)
