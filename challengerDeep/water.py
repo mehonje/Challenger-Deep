@@ -1,4 +1,4 @@
-from sprite import Sprite, convertCoords
+from sprite import Sprite
 import pygame
 
 class Water(Sprite):
@@ -12,4 +12,4 @@ class Water(Sprite):
             self.y = 0
 
         self.stamp(62.5, 100)
-        pygame.draw.line(self.screen, (102, 175, 255), convertCoords(-240, 0 - self.gameEngine.camY, ""), convertCoords(240, 0 - self.gameEngine.camY, ""), width=1)
+        pygame.draw.line(self.screen, (102, 175, 255),self. convertCoords(-240, 0 - self.gameEngine.camY, ""), self.convertCoords(240, 0 - self.gameEngine.camY, ""), width=1)
