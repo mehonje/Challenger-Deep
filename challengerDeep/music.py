@@ -1,10 +1,11 @@
-from sprite import convertCoords
+from sprite import Sprite
 import pygame
 import random
 import time
 
-class Music:
-    def __init__(self, gameEngine):
+class Music(Sprite):
+    def __init__(self, gameEngine, costume):
+        super().__init__(gameEngine, costume)
         self.songs = ["songs/hammockTurnAwayAndReturn.mp3", "songs/scottBuckleyAurora.mp3", "songs/erikWernquistCassini'sGrandFinale.mp3", "songs/cristianSandquistWanderers.mp3", "songs/lenaRaineInfiniteAmethyst.mp3", "songs/alekseyChistilinOcean.mp3", "songs/stanislavBarsantovInterstellarTravelling.mp3", "songs/M83AnotherWaveFromYou.mp3"]
         self.songNames = ["Turn Away And Return - Hammock", "Aurora - Scott Buckley", "Cassini's Grand Finale - Erik Wernquist", "Wanderers - Cristian Sandquist", "Infinite Amethyst - Lena Raine", "Ocean - Aleksey Chistilin", "Interstellar Travelling - Stanislav Barsantov", "Another Wave From You - M83"]
         self.songLengths = [313, 498, 221, 230, 296, 212, 87, 113]
@@ -67,5 +68,5 @@ class Music:
                 self.playSong(7)
 
     def paint(self):
-        pygame.draw.line(self.gameEngine.screen, (27, 27, 27), convertCoords(-229, 162.5, ""), convertCoords(-56, 162.5, ""), 2)
-        pygame.draw.line(self.gameEngine.screen, (128, 128, 128), convertCoords(-229, 162.5, ""), convertCoords(-229 + (((time.time() - self.startTime) / self.length) * 173), 162.5, ""), 2)
+        pygame.draw.line(self.gameEngine.screen, (27, 27, 27), self.convertCoords(-229, 162.5, ""), self.convertCoords(-56, 162.5, ""), 2)
+        pygame.draw.line(self.gameEngine.screen, (128, 128, 128), self.convertCoords(-229, 162.5, ""), self.convertCoords(-229 + (((time.time() - self.startTime) / self.length) * 173), 162.5, ""), 2)
