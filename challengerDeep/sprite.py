@@ -26,9 +26,9 @@ class Sprite:
         self.costume.set_alpha(255 * (1 - transparency / 100))
         self.screen.blit(self.costume, self.rect)
 
-    def convertCoords(self, x, y, rect):
+    def convertCoords(self, x, y, rect = None):
         match rect:
-            case "":
+            case None:
                 x = (self.gameEngine.width / 2) + (x * (self.gameEngine.width / 480))
                 y = (self.gameEngine.height / 2) - (y * (self.gameEngine.height / 360))
             case _:
