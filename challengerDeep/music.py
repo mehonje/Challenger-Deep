@@ -68,5 +68,5 @@ class Music(Sprite):
                 self.playSong(7)
 
     def paint(self):
-        pygame.draw.line(self.gameEngine.screen, (27, 27, 27), self.convertCoords(-229, 162.5, ""), self.convertCoords(-56, 162.5, ""), 2)
-        pygame.draw.line(self.gameEngine.screen, (128, 128, 128), self.convertCoords(-229, 162.5, ""), self.convertCoords(-229 + (((time.time() - self.startTime) / self.length) * 173), 162.5, ""), 2)
+        pygame.draw.line(self.gameEngine.screen, (27, 27, 27), self.convertCoords(-229, 162.5), self.convertCoords(-56, 162.5), int(2 * (self.gameEngine.width / 480)))
+        pygame.draw.line(self.gameEngine.screen, (128, 128, 128), self.convertCoords(-229, 162.5), self.convertCoords(-229 + (((time.time() - self.startTime) / self.length) * 173), 162.5), int(2 * (self.gameEngine.width / 480)))
