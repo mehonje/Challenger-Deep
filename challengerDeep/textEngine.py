@@ -12,19 +12,24 @@ class TextEngine(Sprite):
         if fontSetup not in self.fontSetups:
             self.fontSetups[fontSetup] = pygame.font.SysFont(font, int(size * (self.gameEngine.width / 480)))
         font = self.fontSetups[fontSetup]
-        x, y = position[0], position[1]
-        if align == "r":
-             x -= font.size(text)[0]
-        elif align == "c":
-            x -= font.size(text)[0] / 2
-        self.screen.blit(font.render(text, True, colour), self.convertCoords(x, y, ""))
 
+        x, y = self.convertCoords(position[0], position[1])
+        textRect = font.render(text, True, colour).get_rect()
+        if align == "c":
+            x -= font.size(text)[0] / 4
+        elif align == "r":
+            x -=font.size(text)[0] / 2
+        y -= font.size(text)[1] / 2
+        
+        self.screen.blit(font.render(text, True, colour), (x, y))
+        
     def paint(self):
-        self.text(f"{floor(self.gameEngine.playerDepth)}m", (0, 175), "c", (255, 255, 255), "Sans Serif", 28)
+        self.text(f"{floor(self.gameEngine.playerDepth)}m", (0, 165), "c", (255, 255, 255), "Sans Serif", 28)
         
         self.text(f"SPEED   {abs(floor(self.gameEngine.player.yVelocity * 100) / 1000)} m/s", (-230, -130), "l", (255, 255, 255), "Sans Serif", 14)
         
         self.text(f"DEPTH   {abs(floor(self.gameEngine.playerDepth * 1000) / 1000)} m", (-230, -140), "l", (255, 255, 255), "Sans Serif", 14)
+        
         #temperature
         tmp = 25
         if self.gameEngine.playerDepth > 0 and self.gameEngine.playerDepth < 1000:
@@ -46,7 +51,7 @@ class TextEngine(Sprite):
 
         self.text(f"PRES.   {floor((1 + (self.gameEngine.playerDepth / 10)) * 1000) / 1000} atm", (-230, -170), "l", (255, 255, 255), "Sans Serif", 14)
 
-        self.text(self.gameEngine.music.song, (-230, 175), "l", (255, 255, 255), "Sans Serif", 14)
+        self.text(self.gameEngine.music.song, (-230, 170), "l", (255, 255, 255), "Sans Serif", 14)
 
         #Sunlight Zone data
         if self.gameEngine.playerDepth > -3 and self.gameEngine.playerDepth < 42.5:
@@ -75,7 +80,7 @@ class TextEngine(Sprite):
             self.text("The Midnight Zone", (60, -10000 - self.gameEngine.camY), "l", (255, 255, 255), "Sans Serif", 21)
             self.text("(1000m-4000m)", (60, -10015 - self.gameEngine.camY), "l", (255, 255, 255), "Sans Serif", 18)
             self.text("The Midnight Zone is the", (60, -10030 - self.gameEngine.camY), "l", (255, 255, 255), "Sans Serif", 14)
-            self.text(" largest habitat on Earth,", (60, -10040 - self.gameEngine.camY), "l", (255, 255, 255), "Sans Serif", 14)
+            self.text(" largest habitat onsc Earth,", (60, -10040 - self.gameEngine.camY), "l", (255, 255, 255), "Sans Serif", 14)
             self.text(" containing 70% of all", (60, -10050 - self.gameEngine.camY), "l", (255, 255, 255), "Sans Serif", 14)
             self.text(" seawater", (60, -10060 - self.gameEngine.camY), "l", (255, 255, 255), "Sans Serif", 14)
             self.text("No sunlight reaches the", (60, -10070 - self.gameEngine.camY), "l", (255, 255, 255), "Sans Serif", 14)
