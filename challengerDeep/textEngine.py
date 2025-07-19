@@ -16,9 +16,9 @@ class TextEngine(Sprite):
         x, y = self.convertCoords(position[0], position[1])
         textRect = font.render(text, True, colour).get_rect()
         if align == "c":
-            x -= font.size(text)[0] / 4
+            x -= font.size(text)[0] / 2
         elif align == "r":
-            x -=font.size(text)[0] / 2
+            x -= font.size(text)[0]
         y -= font.size(text)[1] / 2
         
         self.screen.blit(font.render(text, True, colour), (x, y))
