@@ -17,4 +17,4 @@ class Glow(Sprite):
 
     def paint(self):
         self.x, self.y = self.glowX, self.glowY - self.gameEngine.camY
-        pygame.draw.circle(self.screen, (102, 175, 255), self.convertCoords(self.x, self.y, ""), self.size, 0)
+        pygame.draw.circle(self.screen, (102, 175, 255), self.convertCoords(self.x, self.y), (self.size * (self.gameEngine.width / 480)), 0)
