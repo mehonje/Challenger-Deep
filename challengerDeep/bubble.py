@@ -19,4 +19,4 @@ class Bubble(Sprite):
 
     def paint(self):
         self.x, self.y = self.bubbleX, self.bubbleY - self.gameEngine.camY
-        pygame.draw.circle(self.screen, (102, 175, 255), self.convertCoords(self.x, self.y, ""), self.size / 2, 0)
+        pygame.draw.circle(self.screen, (102, 175, 255), self.convertCoords(self.x, self.y), (self.size / 2 * (self.gameEngine.width / 480)), 0)
