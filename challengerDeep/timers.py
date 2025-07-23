@@ -2,12 +2,12 @@ import time
 from sprite import Sprite
 
 class Timers(Sprite):
-    def __init__(self, gameEngine, costume):
+    def __init__(self, gameEngine, costume = None):
         super().__init__(gameEngine, costume)
         self.fps = 0
         self.deltaTime = 0
         self.lastTime = time.time()
-        self.timers = [0, 0]
+        self.timers = [0, 0, 0]
 
     def tick(self):
         self.fps = 1 / (time.time() - self.lastTime)
