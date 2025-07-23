@@ -4,19 +4,16 @@ from random import randint
 import math
 
 class Player(Sprite):
-    def __init__(self, gameEngine, costume):
+    def __init__(self, gameEngine, costume = None):
         super().__init__(gameEngine, costume)
         #set ship data
-        self.ship = randint(0, 1)
-        if self.ship == 0:
-            self.setCostume("dsv limiting factor.png")
+        if self.gameEngine.ship == 0:
             self.subVolume = 32.338
             self.subDragArea = 8.74
             self.subWeight = 12500
             self.ballastWeight = 21100
 
         else:
-            self.setCostume("deepsea challenger.png")
             self.subVolume = 31.671
             self.subDragArea = 3.91
             self.subWeight = 11800
@@ -32,6 +29,10 @@ class Player(Sprite):
         self.gameEngine.playerDepth = abs(self.gameEngine.playerY * 0.1)
 
     def paint(self):
+        if self.gameEngine.ship == 0:
+            self.setCostume("dsv limiting factor.png")
+        else:
+            self.setCostume("deepsea challenger.png")
         self.y = self.gameEngine.playerY - self.gameEngine.camY
         self.stamp(0, 100)
 
@@ -55,7 +56,7 @@ class Player(Sprite):
             self.gameEngine.playerY = 0
             self.yVelocity *= -0.9
         else:
-            if self.ship == 0:
+            if self.gameEngine.ship == 0:
                 if self.gameEngine.playerY < -109141.5:
                     self.gameEngine.playerY = -109141.5
                     self.yVelocity *= -0.9
