@@ -2,7 +2,7 @@ from sprite import Sprite
 import pygame
 
 class Bubble(Sprite):
-    def __init__(self, gameEngine, costume, x, y, xVelocity, yVelocity, size):
+    def __init__(self, gameEngine, x, y, xVelocity, yVelocity, size, costume = None):
         super().__init__(gameEngine, costume)
         self.bubbleX = x
         self.bubbleY = y
