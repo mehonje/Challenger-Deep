@@ -2,7 +2,7 @@ import pygame
 import random
 
 class SoundEffects:
-    def __init__(self, gameEngine):
+    def __init__(self, gameEngine, costume = None):
         self.motorSound = pygame.mixer.Sound("sounds/subMotor1.mp3")
         self.underwaterAmbience = pygame.mixer.Sound("sounds/underwaterAmbience.mp3")
         self.whaleSounds = [pygame.mixer.Sound("sounds/whale1.mp3"), pygame.mixer.Sound("sounds/whale2.mp3"), pygame.mixer.Sound("sounds/whale3.mp3"), pygame.mixer.Sound("sounds/whale4.mp3")]
