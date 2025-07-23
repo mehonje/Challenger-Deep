@@ -11,6 +11,7 @@ from particles import Particles
 from textEngine import TextEngine
 from soundEffects import SoundEffects
 from music import Music
+from ui import UI
 
 class gameEngine:
     def __init__(self, gameName):
@@ -34,24 +35,27 @@ class gameEngine:
         self.camY = 0
         self.playerDepth = 0
         self.ballastEnabled = 1
+        self.ship = 0
+        self.menu = 1
 
         self.setup()
 
     def setup(self):
         self.keys = pygame.key.get_pressed()
-        self.timers = Timers(self, "")
+        self.timers = Timers(self)
         pygame.mixer.init()
 
-        self.player = Player(self, "")
+        self.player = Player(self)
         self.sky = Sky(self, "sky.png")
         self.water = Water(self, "water.png")
         self.ground = Ground(self, "ground.png")
         self.ballast = Ballast(self, "ballast.png")
         self.light = Light(self, "light2.png")
-        self.particles = Particles(self, "")
-        self.textEngine = TextEngine(self, "")
+        self.particles = Particles(self)
+        self.textEngine = TextEngine(self)
         self.soundEffects = SoundEffects(self)
-        self.music = Music(self, "")
+        self.music = Music(self)
+        self.ui = UI(self)
 
     def runGame(self):
         self.running = True
@@ -70,26 +74,31 @@ class gameEngine:
         self.keys = pygame.key.get_pressed()
 
         self.timers.tick()
-        self.soundEffects.tick()
-        self.music.tick()
-        self.player.tick()
-        self.particles.tick()
-        self.ballast.tick()
-        self.light.tick()
+
+        if self.menu == 0:
+            self.soundEffects.tick()
+            self.music.tick()
+            self.player.tick()
+            self.particles.tick()
+            self.ballast.tick()
+            self.light.tick()
 
         self.clock.tick(30)
 
     def paint(self):
         self.screen.fill((0, 1, 31))
 
-        self.sky.paint()
-        self.ground.paint()
-        self.ballast.paint()
-        self.particles.paintBubbles()
-        self.player.paint()
-        self.water.paint()
-        self.light.paint()
-        self.particles.paintGlow()
+        if self.menu == 0:
+            self.sky.paint()
+            self.ground.paint()
+            self.ballast.paint()
+            self.particles.paintBubbles()
+            self.player.paint()
+            self.water.paint()
+            self.light.paint()
+            self.particles.paintGlow()
+        
+        self.ui.paint()
         self.music.paint()
         self.textEngine.paint()
 
