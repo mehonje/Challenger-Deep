@@ -4,7 +4,7 @@ import random
 import time
 
 class Music(Sprite):
-    def __init__(self, gameEngine, costume):
+    def __init__(self, gameEngine, costume = None):
         super().__init__(gameEngine, costume)
         self.songs = ["songs/hammockTurnAwayAndReturn.mp3", "songs/scottBuckleyAurora.mp3", "songs/erikWernquistCassini'sGrandFinale.mp3", "songs/cristianSandquistWanderers.mp3", "songs/lenaRaineInfiniteAmethyst.mp3", "songs/alekseyChistilinOcean.mp3", "songs/stanislavBarsantovInterstellarTravelling.mp3", "songs/M83AnotherWaveFromYou.mp3"]
         self.songNames = ["Turn Away And Return - Hammock", "Aurora - Scott Buckley", "Cassini's Grand Finale - Erik Wernquist", "Wanderers - Cristian Sandquist", "Infinite Amethyst - Lena Raine", "Ocean - Aleksey Chistilin", "Interstellar Travelling - Stanislav Barsantov", "Another Wave From You - M83"]
