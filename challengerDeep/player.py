@@ -7,7 +7,7 @@ class Player(Sprite):
     def __init__(self, gameEngine, costume = None):
         super().__init__(gameEngine, costume)
         #set ship data
-        if self.gameEngine.ship == 0:
+        if self.gameEngine.ship == 1:
             self.subVolume = 32.338
             self.subDragArea = 8.74
             self.subWeight = 12500
@@ -29,7 +29,7 @@ class Player(Sprite):
         self.gameEngine.playerDepth = abs(self.gameEngine.playerY * 0.1)
 
     def paint(self):
-        if self.gameEngine.ship == 0:
+        if self.gameEngine.ship == 1:
             self.setCostume("dsv limiting factor.png")
         else:
             self.setCostume("deepsea challenger.png")
