@@ -18,7 +18,7 @@ class Particles(Sprite):
     def tick(self):
         tmp = self.gameEngine.keys[pygame.K_w] - self.gameEngine.keys[pygame.K_s]
         if tmp != 0:
-            if self.gameEngine.player.ship == 0:
+            if self.gameEngine.ship == 0:
                 newParticle = Bubble(self.gameEngine, uniform(-19.9, -20.1), self.gameEngine.playerY, uniform(-0.1, 0.1), uniform(-0.1, 0.1), uniform(2.0, 3.0))
                 self.bubbles.append(newParticle)
                 newParticle = Bubble(self.gameEngine, uniform(19.9, 20.1), self.gameEngine.playerY, uniform(-0.1, 0.1), uniform(-0.1, 0.1), uniform(2.0, 3.0))
