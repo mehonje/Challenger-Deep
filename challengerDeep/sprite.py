@@ -11,11 +11,12 @@ class Sprite:
         self.rect = self.costumePath.get_rect()
         self.gameEngine = gameEngine
 
-    def setCostume(self, costume):
-        if costume != "":
-            self.costumePath = pygame.image.load("costumes/" + costume).convert_alpha()
-        else:
-            self.costumePath = pygame.image.load("costumes/costume1.png").convert_alpha()
+    def setCostume(self, costume = None):
+        match costume:
+            case None:
+                self.costumePath = pygame.image.load("costumes/costume1.png").convert_alpha()
+            case _:
+                self.costumePath = pygame.image.load("costumes/" + costume).convert_alpha()
 
     def stamp(self, transparency, size):
         self.costume = pygame.transform.rotate(self.costumePath, -self.dir)
@@ -35,3 +36,11 @@ class Sprite:
                 x = ((self.gameEngine.width / 2) + (x * (self.gameEngine.width / 480))) - (rect.width / 2)
                 y = ((self.gameEngine.height / 2) - (y * (self.gameEngine.height / 360))) - (rect.height / 2)
         return int(x), int(y)
+
+    @property
+    def isClicked(self):
+        if not self.rect:
+            return False
+        if pygame.mouse.get_pressed()[0]:
+            return self.rect.collidepoint(pygame.mouse.get_pos())
+        return False
