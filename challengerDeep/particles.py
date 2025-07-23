@@ -6,27 +6,27 @@ import pygame
 from random import uniform
 
 class Particles(Sprite):
-    def __init__(self, gameEngine, costume):
+    def __init__(self, gameEngine, costume = None):
         super().__init__(gameEngine, costume)
         self.bubbles = []
         self.glow = []
 
         for x in range(0, 99):
-            self.newParticle = Glow(self.gameEngine, "", uniform(-240, 240), uniform(-1820, -2180), uniform(1.0, 2.0))
+            self.newParticle = Glow(self.gameEngine, uniform(-240, 240), uniform(-1820, -2180), uniform(1.0, 2.0))
             self.glow.append(self.newParticle)
 
     def tick(self):
         tmp = self.gameEngine.keys[pygame.K_w] - self.gameEngine.keys[pygame.K_s]
         if tmp != 0:
             if self.gameEngine.player.ship == 0:
-                newParticle = Bubble(self.gameEngine, "", uniform(-19.9, -20.1), self.gameEngine.playerY, uniform(-0.1, 0.1), uniform(-0.1, 0.1), uniform(2.0, 3.0))
+                newParticle = Bubble(self.gameEngine, uniform(-19.9, -20.1), self.gameEngine.playerY, uniform(-0.1, 0.1), uniform(-0.1, 0.1), uniform(2.0, 3.0))
                 self.bubbles.append(newParticle)
-                newParticle = Bubble(self.gameEngine, "", uniform(19.9, 20.1), self.gameEngine.playerY, uniform(-0.1, 0.1), uniform(-0.1, 0.1), uniform(2.0, 3.0))
+                newParticle = Bubble(self.gameEngine, uniform(19.9, 20.1), self.gameEngine.playerY, uniform(-0.1, 0.1), uniform(-0.1, 0.1), uniform(2.0, 3.0))
                 self.bubbles.append(newParticle)
             else:
-                newParticle = Bubble(self.gameEngine, "", uniform(-9.9, -9.1), self.gameEngine.playerY - 6, uniform(-0.1, 0.1), uniform(-0.1, 0.1), uniform(2.0, 3.0))
+                newParticle = Bubble(self.gameEngine, uniform(-9.9, -9.1), self.gameEngine.playerY - 6, uniform(-0.1, 0.1), uniform(-0.1, 0.1), uniform(2.0, 3.0))
                 self.bubbles.append(newParticle)
-                newParticle = Bubble(self.gameEngine, "", uniform(9.1, 9.9), self.gameEngine.playerY - 6, uniform(-0.1, 0.1), uniform(-0.1, 0.1), uniform(2.0, 3.0))
+                newParticle = Bubble(self.gameEngine, uniform(9.1, 9.9), self.gameEngine.playerY - 6, uniform(-0.1, 0.1), uniform(-0.1, 0.1), uniform(2.0, 3.0))
                 self.bubbles.append(newParticle)
             
         self.bubblesCopy = self.bubbles
