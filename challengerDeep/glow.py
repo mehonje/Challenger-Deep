@@ -3,7 +3,7 @@ import pygame
 from random import uniform
 
 class Glow(Sprite):
-    def __init__(self, gameEngine, costume, x, y, size):
+    def __init__(self, gameEngine, x, y, size, costume = None):
         super().__init__(gameEngine, costume)
         self.glowX = x
         self.glowY = y
