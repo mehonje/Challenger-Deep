@@ -6,7 +6,7 @@ import time
 class Music(Sprite):
     def __init__(self, gameEngine, costume = None):
         super().__init__(gameEngine, costume)
-        self.songs = ["songs/hammockTurnAwayAndReturn.mp3", "songs/scottBuckleyAurora.mp3", "songs/erikWernquistCassini'sGrandFinale.mp3", "songs/cristianSandquistWanderers.mp3", "songs/lenaRaineInfiniteAmethyst.mp3", "songs/newComposition#863Mehonje", "songs/theDistantSunScottBuckley", "songs/chasingDaylightScottBuckley", "songs/alekseyChistilinOcean.mp3", "songs/stanislavBarsantovInterstellarTravelling.mp3", "songs/M83AnotherWaveFromYou.mp3"]
+        self.songs = ["songs/hammockTurnAwayAndReturn.mp3", "songs/scottBuckleyAurora.mp3", "songs/erikWernquistCassini'sGrandFinale.mp3", "songs/cristianSandquistWanderers.mp3", "songs/lenaRaineInfiniteAmethyst.mp3", "songs/mehonjeNewComposition#863", "songs/scottBuckleyTheDistantSun", "songs/scottBuckleyChasingDaylight", "songs/alekseyChistilinOcean.mp3", "songs/stanislavBarsantovInterstellarTravelling.mp3", "songs/M83AnotherWaveFromYou.mp3"]
         self.songNames = ["Turn Away And Return - Hammock", "Aurora - Scott Buckley", "Cassini's Grand Finale - Erik Wernquist", "Wanderers - Cristian Sandquist", "Infinite Amethyst - Lena Raine", "New Composition #863 - Mehonje", "The Distant Sun - Scott Buckley", "Chasing Daylight - Scott Buckley", "Ocean - Aleksey Chistilin", "Interstellar Travelling - Stanislav Barsantov", "Another Wave From You - M83"]
         self.songLengths = [313.05, 498.93, 221.1, 230.04, 296.63, 133.62, 225.61, 273.97, 212.13, 87.67, 113.8]
 
