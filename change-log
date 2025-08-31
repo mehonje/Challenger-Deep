@@ -1,2 +1,12 @@
 Beta Development started on May 5th, 2025
 Beta released on June 1st, 2025
+
+13 major updates (forgot to document them), adding a second sub, menus, a new sound effect engine, etc.
+
+v0.14, 28/8/2025
+  Music
+    Replaced all copyrighted and placeholder songs in the template soundtrack with royalty-free songs, by Scott Buckley and Chris Zabriskie
+
+v0.15.1, 31/8/2025
+  UI
+    Added a background to the pause menu
