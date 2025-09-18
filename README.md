@@ -24,6 +24,7 @@ Notes and Credits
     Deepsea Challenger from Google Images
   
   Music
+  
     Cylinder Five - Chris Zabriskie
     Aurora - Scott Buckley
     Cylinder Eight - Chris Zabriskie
@@ -35,8 +36,11 @@ Notes and Credits
     Machina  - Scott Buckley
     Signal To Noise - Scott Buckley
     Undertow - Scott Buckley
-  
-    Music by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au
-    Music by Chris Zabriskie - released under CC-BY 4.0. https://chriszabriskie.com/index.html
+
+  Music Credits
+    Music by Scott Buckley - released under CC-BY 4.0.
+      www.scottbuckley.com.au
+    Music by Chris Zabriskie - released under CC-BY 4.0.
+      https://chriszabriskie.com/index.html
   
   #Relaxing #Atmospheric #Realistic #Underwater #Exploration #Games
