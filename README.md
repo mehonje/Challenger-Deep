@@ -36,9 +36,7 @@ Notes and Credits
     Signal To Noise - Scott Buckley
     Undertow - Scott Buckley
   
-    Music by Scott Buckley - released under CC-BY 4.0.
-      www.scottbuckley.com.au
-    Music by Chris Zabriskie - released under CC-BY 4.0.
-      https://chriszabriskie.com/index.html
+    Music by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au
+    Music by Chris Zabriskie - released under CC-BY 4.0. https://chriszabriskie.com/index.html
   
   #Relaxing #Atmospheric #Realistic #Underwater #Exploration #Games
