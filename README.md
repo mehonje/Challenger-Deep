@@ -25,12 +25,11 @@ Notes and Credits
   
   Music
   
-    Cylinder Five - Chris Zabriskie
+    The Things That Keep Us Here - Scott Buckley
     Aurora - Scott Buckley
     Cylinder Eight - Chris Zabriskie
     Cylinder Three - Chris Zabriskie
     The Spaces Between - Scott Buckley
-    The Tings That Keep Us Here - Scott Buckley
     The Distant Sun - Scott Buckley
     Chasing Daylight - Scott Buckley
     The Exodus - Scott Buckley
