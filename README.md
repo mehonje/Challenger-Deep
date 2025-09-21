@@ -30,12 +30,13 @@ Notes and Credits
     Cylinder Eight - Chris Zabriskie
     Cylinder Three - Chris Zabriskie
     The Spaces Between - Scott Buckley
-    The Restoration - Scott Buckley
+    The Tings That Keep Us Here - Scott Buckley
     The Distant Sun - Scott Buckley
     Chasing Daylight - Scott Buckley
-    Machina  - Scott Buckley
+    The Exodus - Scott Buckley
+    Titan  - Scott Buckley
     Signal To Noise - Scott Buckley
-    Undertow - Scott Buckley
+    Undertow - Chris Zabriskie
 
   Music Credits
     Music by Scott Buckley - released under CC-BY 4.0.
