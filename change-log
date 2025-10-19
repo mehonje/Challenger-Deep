@@ -3,15 +3,15 @@ Beta released on June 1st, 2025
 
 13 major updates (Forgot to document them. Oops.), adding a second sub, menus, a new sound effect engine, etc.
 
-v0.14, 28/8/2025
+v0.2025.34.1, 28/8/2025
   Music
-    Replaced all copyrighted and placeholder songs in the template soundtrack with royalty-free songs, by Scott Buckley and Chris Zabriskie
+    Replaced all copyrighted and placeholder songs in the template soundtrack with royalty-free songs by Scott Buckley and Chris Zabriskie
 
-v0.15.1, 31/8/2025
+v0.2025.34.2, 31/8/2025
   UI
     Added a background to the pause menu
 
-v0.15.2, 17/9/2025
+v0.2025.37.1, 17/9/2025
   UI
     Added a mobile slider to the main and pause menu
     Added a settings button that opens and closes the pause menu
@@ -19,12 +19,17 @@ v0.15.2, 17/9/2025
   Music
     Replaced Cylinder One by Chris Zabriskie with Undertow by Scott Buckley
 
-v0.15.3, 20/9/25
+v0.2025.37.2, 20/9/25
   Music
     Replaced Cylinder Five by Chris Zabriskie with The Things That Keep Us Here by Scott Buckley
     Replaced The Restoration by Scott Buckley with The Exodus by Scott Buckley
 
-v1.0.0, 15/10/2025
+v1.2025.41.1, 15/10/2025
   Released the finished Scratch version
 
 v2 development started on October 15th, 2025
+
+v1.2025.42.1, 19/10/2025
+  Music
+    Replaced Cylinder Eight by Chris Zabriskie with The Great Sea by Scott Buckley
+  Switched to a new update version format
