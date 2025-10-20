@@ -15,32 +15,24 @@ Instructions
   
 Notes and Credits
   Made for World Ocean Day, June 8, 2025.
-    https://worldoceanday.org/
+  https://worldoceanday.org/
   
-  Getting to the bottom requires 1 to 3 hours. Good luck!
-  
-  Costumes
-    DSV Limiting Factor from Google Images
-    Deepsea Challenger from Google Images
+  Getting to the bottom requires one to one and a half hours. Good luck!
   
   Music
   
     The Things That Keep Us Here - Scott Buckley
     Aurora - Scott Buckley
-    Cylinder Eight - Chris Zabriskie
-    Cylinder Three - Chris Zabriskie
+    The Great Sea - Scott Buckley
+    A Kind Of Hope - Scott Buckley
     The Spaces Between - Scott Buckley
     The Distant Sun - Scott Buckley
     Chasing Daylight - Scott Buckley
     The Exodus - Scott Buckley
     Titan  - Scott Buckley
     Signal To Noise - Scott Buckley
-    Undertow - Chris Zabriskie
-
-  Music Credits
-    Music by Scott Buckley - released under CC-BY 4.0.
-      www.scottbuckley.com.au
-    Music by Chris Zabriskie - released under CC-BY 4.0.
-      https://chriszabriskie.com/index.html
+    Undertow - Scott Buckley
+  
+    Music by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au
   
   #Relaxing #Atmospheric #Realistic #Underwater #Exploration #Games
