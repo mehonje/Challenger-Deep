@@ -1,4 +1,7 @@
 # Challenger Deep v2.2025.43.1
+https://mehonje.itch.io/challenger-deep
+https://scratch.mit.edu/projects/1173178405/
+
 This is my first proper game, with goals and things to pull people in, unlike the Depths, which was really a game engine.
 
 Instructions
