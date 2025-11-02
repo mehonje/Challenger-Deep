@@ -1,4 +1,4 @@
-# Challenger Deep v1.2025.43.1
+# Challenger Deep v2.2025.43.1
 This is my first proper game, with goals and things to pull people in, unlike the Depths, which was really a game engine.
 
 Instructions
