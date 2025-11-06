@@ -61,3 +61,7 @@ v2.2025.44.2, 5/11/2025
       Fixed a bug where the game slot button darkened the text of the button
     UI
       Added delete buttons to game slot button that clear a save's data. THEY CURRENTLY DO NOT PROMPT FOR CONFIRMATION!
+
+v2.2025.44.3, 6/11/2025
+  v1 Game
+    Added encryption to the save codes to stop the ability of cheating
