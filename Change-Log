@@ -72,3 +72,10 @@ v2.2025.44.4, 7/11/2025
   v1 Game
     Saving/Loading
       Replaced the binary encryption added in v2.2025.44.3 with hex encryption
+
+v2.2025.44.5, 9/11/2025
+  v1 Game
+    Saving/Loading
+      Added a large buffer at the beginning of save codes
+  v2 Game
+    Added functionality to the temperature gauge in the bottom-left of the screen
