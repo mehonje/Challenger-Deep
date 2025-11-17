@@ -80,7 +80,11 @@ v2.2025.44.5, 9/11/2025
   v2 Game
     Added functionality to the temperature gauge in the bottom-left of the screen
 
-v2.2025.45.1, 9/16/2025
+v2.2025.45.1, 16/9/2025
   v1 Game
     Fixed a bug where the reported time the player took to reach the bottom was incorrect
     Fixed a bug where the top speeds of the submersibles on the sub selection menu where incorrect
+
+v2.2025.45.2, 16/9/2025
+  v2 Game
+    Added support for controllers
