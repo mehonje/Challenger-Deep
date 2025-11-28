@@ -82,9 +82,13 @@ v2.2025.44.5, 9/11/2025
 
 v2.2025.45.1, 16/11/2025
   v1 Game
-    Fixed a bug where the reported time the player took to reach the bottom was incorrect
     Fixed a bug where the top speeds of the submersibles on the sub selection menu where incorrect
+    Fixed a bug where the reported time the player took to reach the bottom was incorrect
 
 v2.2025.45.2, 16/11/2025
   v2 Game
     Added support for controllers
+
+v2.2025.47.1, 27/11/2025
+  v1 Game
+    Added sperm whales at 1500m to 1800m
