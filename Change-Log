@@ -64,8 +64,8 @@ v2.2025.44.2, 5/11/2025
 
 v2.2025.44.3, 6/11/2025
   v1 Game
-    Saveing/Loading
-      Added encryption to the save codes to stop the ability of cheating
+    Saving/Loading
+      Added encryption to the save codes to make cheating more difficult
     Fixed a bug where the glowing dots found below 200m would form a line of dots if the player went faster that 360 m/s
 
 v2.2025.44.4, 7/11/2025
@@ -92,3 +92,8 @@ v2.2025.45.2, 16/11/2025
 v2.2025.47.1, 27/11/2025
   v1 Game
     Added sperm whales at 1500m to 1800m
+
+v2.2025.52.1, 31/12/2025
+  v1 Game
+    Switched pressure equation used in hud to a mote accurate version
+    Removed whales
