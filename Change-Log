@@ -3,15 +3,15 @@ Beta released on June 1st, 2025
 
 13 major updates (Forgot to document them. Oops.), adding a second sub, menus, a new sound effect engine, etc.
 
-v0.2025.34.1, 28/8/2025
+u0.2025.34.1, 28/8/2025
   Music
-    Replaced all copyrighted and placeholder songs in the template soundtrack with royalty-free songs by Scott Buckley and Chris Zabriskie
+    Replaced all copyrighted and/or placeholder songs in the template soundtrack with royalty-free songs by Scott Buckley and Chris Zabriskie
 
-v0.2025.34.2, 31/8/2025
+u0.2025.34.2, 31/8/2025
   UI
     Added a background to the pause menu
 
-v0.2025.37.1, 17/9/2025
+u0.2025.37.1, 17/9/2025
   UI
     Added a mobile slider to the main and pause menu
     Added a settings button that opens and closes the pause menu
@@ -19,81 +19,93 @@ v0.2025.37.1, 17/9/2025
   Music
     Replaced Cylinder One by Chris Zabriskie with Undertow by Scott Buckley
 
-v0.2025.37.2, 20/9/25
+u0.2025.37.2, 20/9/25
   Music
     Replaced Cylinder Five by Chris Zabriskie with The Things That Keep Us Here by Scott Buckley
     Replaced The Restoration by Scott Buckley with The Exodus by Scott Buckley
 
-v1.2025.41.1, 15/10/2025
+u1.2025.41.1, 15/10/2025
   Released the finished Scratch version
 
-v2 development started on October 15th, 2025
+u2 development started on October 15th, 2025
 
-v1.2025.42.1, 19/10/2025
+u1.2025.42.1, 19/10/2025
   Music
     Replaced Cylinder Eight by Chris Zabriskie with The Great Sea by Scott Buckley
   Switched to a new update version format
 
-v2.2025.43.1, 2/11/2025
+u2.2025.43.1, 2/11/2025
   v2 Game
     The v2 game has been finished! Some final edits are being made and the game should be released today or tomorrow!
 
-v2.2025.43.2, 2/11/2025
+u2.2025.43.2, 2/11/2025
   v2 Game
     The v2 game has been released! https://mehonje.itch.io/challenger-deep
     It's to big to upload onto Github, so I now have an Itch account.
 
-v2.2025.43.2, 4/11/2025
+u2.2025.43.2, 4/11/2025
   v2 Game
     Glowing dots have been added and can be found below 200m
 
-v2.2025.44.1, 5/11/2025
+u2.2025.44.1, 5/11/2025
   v1 Game
     Added Elijah_2028 the the list of winners! Congratulations!
     Saving/Loading
       Made saving and loading store and restore the timer that counts how long you have played
 
-v2.2025.44.2, 5/11/2025
+u2.2025.44.2, 5/11/2025
   v2 Game
+    UI
+      Added delete buttons to game slot button that clear a save's data. THEY CURRENTLY DO NOT PROMPT FOR CONFIRMATION!
     Bugfixes
       Fixed a bug where "Game1", "Game2", and "Game3" jsons were not created if they didn't exist or if the "games" folder didn't exist
       Fixed a bug where the game would crash if a game json didn't exist
       Fixed a bug where the game slot button darkened the text of the button
-    UI
-      Added delete buttons to game slot button that clear a save's data. THEY CURRENTLY DO NOT PROMPT FOR CONFIRMATION!
 
-v2.2025.44.3, 6/11/2025
+u2.2025.44.3, 6/11/2025
   v1 Game
     Saving/Loading
       Added encryption to the save codes to make cheating more difficult
     Fixed a bug where the glowing dots found below 200m would form a line of dots if the player went faster that 360 m/s
 
-v2.2025.44.4, 7/11/2025
+u2.2025.44.4, 7/11/2025
   v1 Game
     Saving/Loading
       Replaced the binary encryption added in v2.2025.44.3 with hex encryption
 
-v2.2025.44.5, 9/11/2025
+u2.2025.44.5, 9/11/2025
   v1 Game
     Saving/Loading
       Added a large buffer at the beginning of save codes
   v2 Game
     Added functionality to the temperature gauge in the bottom-left of the screen
 
-v2.2025.45.1, 16/11/2025
+u2.2025.45.1, 16/11/2025
   v1 Game
-    Fixed a bug where the top speeds of the submersibles on the sub selection menu where incorrect
-    Fixed a bug where the reported time the player took to reach the bottom was incorrect
+    Bugfixes
+      Fixed a bug where the top speeds of the submersibles on the sub selection menu where incorrect
+      Fixed a bug where the reported time the player took to reach the bottom was incorrect
 
-v2.2025.45.2, 16/11/2025
+u2.2025.45.2, 16/11/2025
   v2 Game
     Added support for controllers
 
-v2.2025.47.1, 27/11/2025
+u2.2025.47.1, 27/11/2025
   v1 Game
     Added sperm whales at 1500m to 1800m
 
-v2.2025.52.1, 31/12/2025
+u2.2025.52.1, 31/12/2025
   v1 Game
-    Switched pressure equation used in hud to a mote accurate version
+    Switched pressure equation used in hud to a more accurate version
     Removed whales
+
+u2.2026.0.1, 2/1/2026
+  v2 Game
+    Applied changes made to v1 game in u2.2025.52.1
+    Bugfixes
+      Fixed a bug where save data was not loaded if it was empty
+      Fixed a bug where save files were not created if they didn't exist
+      Fixed a bug where a crash could occur if save data was incorrectly formatted
+      Fixed a bug where a crash could occur if the save file failed to open
+      Fixed a bug where a crash could occur if the save data failed to load
+  Changed update format slightly
