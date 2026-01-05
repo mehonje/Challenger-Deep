@@ -109,3 +109,11 @@ u2.2026.0.1, 2/1/2026
       Fixed a bug where a crash could occur if the save file failed to open
       Fixed a bug where a crash could occur if the save data failed to load
   Changed update format slightly
+
+u2.2026.0.2, 5/1/2026
+  v1 Game
+    Added more facts about depth such as "Freediving World Record", "Scuba Diving World Record", "Depth of the Wreck of RMS Titanic", and "Height of Mount Everest"
+  v2 Game
+    Added more facts about depth such as "Freediving World Record", "Scuba Diving World Record", "Depth of the Wreck of RMS Titanic", and "Height of Mount Everest"
+    Added sliders to control the music and sound effect volumes
+      Volumes are stored in save data for each save
