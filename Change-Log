@@ -117,3 +117,7 @@ u2.2026.0.2, 5/1/2026
     Added more facts about depth such as "Freediving World Record", "Scuba Diving World Record", "Depth of the Wreck of RMS Titanic", and "Height of Mount Everest"
     Added sliders to control the music and sound effect volumes
       Volumes are stored in save data for each save
+
+u2.2026.0.3, 5/1/2026
+  v2 Game
+    Fixed a bug where save data was not loaded correctly
