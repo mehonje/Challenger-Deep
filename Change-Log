@@ -121,3 +121,7 @@ u2.2026.0.2, 5/1/2026
 u2.2026.0.3, 5/1/2026
   v2 Game
     Fixed a bug where save data was not loaded correctly
+
+u2.2026.3.1
+  v2 Game
+    Changed application scale size so that application should scale with window size and screen resolution
